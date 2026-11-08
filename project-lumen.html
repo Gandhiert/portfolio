@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2efe7">
+  <meta name="description" content="Lumen — a calmer way to understand your screen time. A product design study by Gandhi Ert.">
+  <link rel="canonical" href="https://gandhiert.dev/project-lumen.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gandhi Ert">
+  <meta property="og:title" content="Lumen — Gandhi Ert">
+  <meta property="og:description" content="Lumen — a calmer way to understand your screen time. A product design study by Gandhi Ert.">
+  <meta property="og:url" content="https://gandhiert.dev/project-lumen.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lumen — Gandhi Ert">
+  <meta name="twitter:description" content="Lumen — a calmer way to understand your screen time. A product design study by Gandhi Ert.">
+  <title>Lumen — Gandhi Ert</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f2efe7'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23d93a1e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="veil" aria-hidden="true"><span class="veil-mark">Gandhi Ert</span></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-head" data-head>
+    <a class="mark" href="index.html" aria-label="Gandhi Ert — home">
+      <span class="mark-glyph" aria-hidden="true">GE</span>
+      <span class="mark-name">Gandhi Ert</span>
+    </a>
+
+    <nav class="head-nav" aria-label="Primary">
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="head-tools">
+      <span class="head-status"><i aria-hidden="true"></i>Open to good problems</span>
+      <button class="index-btn" type="button" data-open-palette aria-haspopup="dialog" aria-controls="palette" aria-label="Open the site index">
+        <span>Index</span><kbd data-kbd>Ctrl K</kbd>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="subpage project-page" tabindex="-1">
+    <div class="project-meta" data-reveal>
+      <a class="back-link" href="work.html">← All work</a>
+      <span>01 / Product design — 2025</span>
+    </div>
+
+    <div class="project-head" data-reveal>
+      <h1>Lumen<span class="dot">.</span></h1>
+      <p class="project-lede">A calmer way to understand your screen time.</p>
+    </div>
+
+    <figure class="case-figure" data-reveal>
+      <div class="case-visual lumen-visual" aria-hidden="true">
+        <span class="lumen-sun"></span>
+        <span class="lumen-scale">
+          <i>08h</i>
+          <i>06h</i>
+          <i>04h</i>
+          <i>02h</i>
+        </span>
+        <span class="case-caption">Lumen / Screen time</span>
+        <span class="lumen-readout">04h 12m / Today</span>
+      </div>
+      <figcaption><span>Fig. 01</span><span>Lumen — screen time, reimagined</span></figcaption>
+    </figure>
+
+    <div class="case-grid" data-reveal>
+      <div class="case-block">
+        <p class="case-label">The question</p>
+        <p>Can a screen-time tool feel less like a scolding parent and more like a thoughtful friend?</p>
+      </div>
+      <div class="case-block">
+        <p class="case-label">The answer</p>
+        <p>Lumen turns raw usage into gentle patterns. No streaks, no guilt — just enough context to help you choose what happens next.</p>
+      </div>
+    </div>
+
+    <nav class="next-project" aria-label="Next project" data-reveal>
+      <span>Next experiment</span>
+      <a href="project-kite.html">Kite weather <span aria-hidden="true">↗</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot-top">
+      <span>Gandhi Ert / 2026</span>
+      <span>Made with intention &amp; a lot of tabs.</span>
+    </div>
+    <div class="foot-bottom">
+      <a class="foot-mail" href="mailto:hello@gandhiert.dev">hello@gandhiert.dev</a>
+      <div class="foot-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href="#main">Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="palette" id="palette" aria-label="Site index">
+    <div class="palette-inner">
+      <div class="palette-head">
+        <span class="palette-label">Index</span>
+        <input class="palette-input" type="search" placeholder="Jump to a page or experiment…" aria-label="Search pages and projects" autocomplete="off" spellcheck="false">
+        <kbd>Esc</kbd>
+      </div>
+      <ul class="palette-list" aria-label="Results"></ul>
+      <div class="palette-foot">
+        <span>↑↓ navigate</span>
+        <span>↵ open</span>
+        <span>esc close</span>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

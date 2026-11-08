@@ -1,0 +1,9 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Dependencies (none today, kept for the future)
+node_modules/
+
+# Logs
+*.log
