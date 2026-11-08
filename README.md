@@ -4,7 +4,8 @@ A small, hand-built portfolio for Gandhi Ert: an Information Technology undergra
 
 The site is plain HTML, CSS, and JavaScript. No build step, no framework, no dependencies.
 
-- **Live domain:** <https://gandhiert.app>
+- **Live domain:** <https://gandhiert.app> *(cutover to Cloudflare Pages pending)*
+- **Preview:** <https://gandhiert.github.io/portfolio/> *(GitHub Pages, active now)*
 - **Repository:** <https://github.com/Gandhiert/portfolio>
 - **Email:** <gandhiert149@gmail.com>
 
@@ -23,6 +24,7 @@ The site is plain HTML, CSS, and JavaScript. No build step, no framework, no dep
 ├── styles.css             # Design tokens, layout, components, responsive rules
 ├── script.js              # Page transitions, palette, previews, reveal, clock
 ├── _headers               # Cloudflare Pages security headers
+├── .nojekyll              # Serve the repo as-is on GitHub Pages
 ├── robots.txt             # Crawler rules
 ├── sitemap.xml            # Canonical URL list
 └── .gitignore
