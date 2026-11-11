@@ -95,6 +95,9 @@ strong {
   color: var(--muted);
   font-size: 16px;
   font-weight: 500;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1.5px;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .nav a:hover,
@@ -141,7 +144,7 @@ strong { font-weight: 650; }
   margin: 8px -16px 0;
   padding: 16px;
   border-radius: 10px;
-  transition: background-color 0.2s ease, opacity 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .entry h3 {
@@ -149,11 +152,6 @@ strong { font-weight: 650; }
   font-size: 16px;
   font-weight: 650;
   line-height: 1.4;
-}
-
-.entry:focus-within {
-  outline: 2px solid var(--bright);
-  outline-offset: 3px;
 }
 
 .entry h3 a::after {
@@ -168,11 +166,16 @@ strong { font-weight: 650; }
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .entry:hover { background: rgba(244, 241, 234, 0.07); }
+  .nav a:hover {
+    transform: translateX(10px);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
 
-  section:has(.entry:hover) .entry:not(:hover) { opacity: 0.4; }
-
-  .entry:hover h3 span { transform: translate(3px, -3px); }
+  .entry:hover {
+    background: rgba(244, 241, 234, 0.05);
+    transform: translateX(12px);
+  }
 }
 
 .entry-top {
@@ -268,4 +271,12 @@ strong { font-weight: 650; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+
+  .nav a,
+  .entry,
+  .entry h3 span { transition: none; }
+
+  .nav a:hover,
+  .entry:hover,
+  .entry:hover h3 span { transform: none; }
 }
